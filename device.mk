@@ -785,3 +785,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 # Increment the SVN for any official public releases
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.svn=4
+
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
