@@ -41,11 +41,13 @@ BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware
 BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem
 BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1
 BOARD_KERNEL_CMDLINE += usbcore.autosuspend=7
+
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_CLANG_COMPILE := true
-#TARGET_KERNEL_CLANG_VERSION := 7.0.2
 TARGET_KERNEL_SOURCE := kernel/google/bluecross
-TARGET_KERNEL_CONFIG := b1c1_defconfig
+TARGET_KERNEL_CONFIG := kirisakura_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
 
 BOARD_KERNEL_BASE        := 0x00000000
