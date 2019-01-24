@@ -68,6 +68,7 @@ endif
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
     LOCAL_KERNEL := device/google/crosshatch-kernel/Image.lz4-dtb
+    BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
 else
     LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
